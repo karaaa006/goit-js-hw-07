@@ -2,10 +2,11 @@ let counterValue = 0;
 const valueRef = document.querySelector("#value");
 const increment = () => {
   counterValue++;
-  valueRef.textContent = Number(valueRef.textContent) + 1;
+  valueRef.textContent = counterValue;
 };
 const decrement = () => {
-  valueRef.textContent -= 1;
+  counterValue--;
+  valueRef.textContent = counterValue;
 };
 
 document
