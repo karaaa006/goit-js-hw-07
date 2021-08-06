@@ -15,7 +15,7 @@ const images = [
 
 const galleryRef = document.querySelector("ul#gallery");
 
-images.forEach((el) =>
+const galleryImages = images.map((el) =>
   galleryRef.insertAdjacentHTML(
     "beforeend",
     `
