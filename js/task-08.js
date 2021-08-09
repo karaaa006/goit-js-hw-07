@@ -13,12 +13,12 @@ const getRandomColor = () => {
 
 const createBoxes = (amount) => {
   const divs = [];
-  let boxSize = 20;
+  let boxSize = 30;
 
   for (let i = 0; i < amount; i += 1) {
     const newEl = document.createElement("div");
-    newEl.style.width = `${boxSize + 10}px`;
-    newEl.style.height = `${boxSize + 10}px`;
+    newEl.style.width = `${boxSize}px`;
+    newEl.style.height = `${boxSize}px`;
     newEl.style.backgroundColor = `${getRandomColor()}`;
 
     divs.push(newEl);
